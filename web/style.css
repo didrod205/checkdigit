@@ -1,0 +1,51 @@
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #56d364;
+  --ok: #3fb950;
+  --bad: #f85149;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.5; }
+
+.hero { text-align: center; padding: 2.2rem 1rem 0.75rem; }
+.hero h1 { margin: 0; font-size: 2.3rem; }
+.tagline { margin: 0.4rem auto; max-width: 42rem; }
+.tagline strong { color: var(--accent); }
+.privacy { color: var(--muted); font-size: 0.9rem; }
+
+main { max-width: 40rem; margin: 0 auto; padding: 0 1rem 3rem; display: flex; flex-direction: column; gap: 1rem; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; }
+h3 { margin: 0 0 0.6rem; font-size: 0.95rem; }
+.muted { color: var(--muted); font-weight: 400; }
+.small { font-size: 0.8rem; }
+
+input[type="text"] {
+  width: 100%; background: #0d1117; color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.8rem; font-size: 1.2rem; font-family: ui-monospace, Menlo, monospace;
+}
+input[type="text"]:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+
+.result { margin-top: 0.75rem; min-height: 2.2rem; }
+.badge { display: inline-block; padding: 0.5rem 0.9rem; border-radius: 8px; font-weight: 700; border: 1px solid currentColor; }
+.badge.ok { color: var(--ok); }
+.badge.bad { color: var(--bad); }
+.badge.muted { color: var(--muted); font-weight: 500; }
+
+.gen { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.gen button {
+  background: transparent; color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.5rem 0.9rem; cursor: pointer; font-weight: 600; font-size: 0.88rem;
+}
+.gen button:hover { border-color: var(--accent); color: var(--accent); }
+.genout { margin-top: 0.9rem; display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.genout code { font-size: 1.1rem; font-family: ui-monospace, Menlo, monospace; }
+.copy { background: var(--accent); color: #062a0d; border: none; border-radius: 6px; padding: 0.35rem 0.7rem; cursor: pointer; font-weight: 600; }
+
+footer { text-align: center; color: var(--muted); padding: 2rem 1rem 3rem; font-size: 0.85rem; }
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }

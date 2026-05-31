@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkdigit — validate & generate cards, IBANs, ISBNs, barcodes (locally)</title>
+    <meta
+      name="description"
+      content="Validate or generate checksummed IDs — credit cards (Luhn), IBANs (mod-97), ISBN-10/13, EAN/UPC barcodes — with exact check-digit math, entirely in your browser. No card number ever leaves the page."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>✅ checkdigit</h1>
+      <p class="tagline">
+        Validate &amp; generate <strong>cards, IBANs, ISBNs &amp; barcodes</strong> —
+        exact check-digit math, in your browser.
+      </p>
+      <p class="privacy">🔒 100% local — no card number ever leaves this page.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h3>Validate</h3>
+        <input id="input" type="text" placeholder="Paste a card, IBAN, ISBN or barcode…" autocomplete="off" />
+        <div id="result" class="result"></div>
+      </section>
+
+      <section class="card">
+        <h3>Generate test data <span class="muted">(for testing only — not real accounts)</span></h3>
+        <div class="gen" id="gen"></div>
+        <div id="genOut" class="genout"></div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://github.com/didrod205/checkdigit">GitHub</a> ·
+      <a href="https://www.npmjs.com/package/checkdigit">npm</a> ·
+      <span>MIT</span> · <span>Zero dependencies</span>
+    </footer>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

@@ -4,11 +4,11 @@
 
 ### Validate & generate checksummed IDs — cards, IBANs, ISBNs, barcodes. Locally.
 
-[![npm version](https://img.shields.io/npm/v/checkdigit.svg?color=success)](https://www.npmjs.com/package/checkdigit)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/checkdigit?label=gzip)](https://bundlephobia.com/package/checkdigit)
+[![npm version](https://img.shields.io/npm/v/@didrod2539/checkdigit.svg?color=success)](https://www.npmjs.com/package/@didrod2539/checkdigit)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@didrod2539/checkdigit?label=gzip)](https://bundlephobia.com/package/@didrod2539/checkdigit)
 [![CI](https://github.com/didrod205/checkdigit/actions/workflows/ci.yml/badge.svg)](https://github.com/didrod205/checkdigit/actions/workflows/ci.yml)
-[![types](https://img.shields.io/npm/types/checkdigit.svg)](https://www.npmjs.com/package/checkdigit)
-[![license](https://img.shields.io/npm/l/checkdigit.svg)](./LICENSE)
+[![types](https://img.shields.io/npm/types/@didrod2539/checkdigit.svg)](https://www.npmjs.com/package/@didrod2539/checkdigit)
+[![license](https://img.shields.io/npm/l/@didrod2539/checkdigit.svg)](./LICENSE)
 
 **[🌐 Try the free web app →](https://didrod205.github.io/checkdigit/)** &nbsp;·&nbsp; paste an ID to validate, or generate test data. Nothing leaves the page.
 
@@ -53,7 +53,7 @@ check or convert an identifier.
 For the library:
 
 ```bash
-npm install checkdigit
+npm install @didrod2539/checkdigit
 ```
 
 Zero dependencies. ESM + CJS + TypeScript types. Runs in the browser, Node, Deno and Bun.
@@ -61,7 +61,7 @@ Zero dependencies. ESM + CJS + TypeScript types. Runs in the browser, Node, Deno
 ## Usage
 
 ```ts
-import { validate, detect, luhn, creditCard, iban, isbn, barcode } from "checkdigit";
+import { validate, detect, luhn, creditCard, iban, isbn, barcode } from "@didrod2539/checkdigit";
 
 // Auto-detect & validate anything
 validate("4111 1111 1111 1111"); // { type: "credit-card", valid: true, detail: "Visa" }

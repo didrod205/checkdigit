@@ -1,6 +1,9 @@
 {
-  "name": "checkdigit",
+  "name": "@didrod2539/checkdigit",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Validate & generate checksummed identifiers — credit cards (Luhn), IBANs (mod-97), ISBN-10/13, and EAN/UPC barcodes — with exact check-digit math. Zero dependencies, 100% local, no card data sent anywhere.",
   "type": "module",
   "main": "./dist/index.js",

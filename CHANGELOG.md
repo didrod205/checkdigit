@@ -6,6 +6,12 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.2.0]
+
+### Added
+
+- **Command-line interface** (`checkdigit` bin), zero-dependency: `validate <id>` (auto-detects card/IBAN/ISBN/barcode and exits non-zero when invalid) and `generate <card|isbn|barcode|luhn>` for format-valid test data. Reads stdin too.
+
 ## [0.1.0]
 
 ### Added
@@ -20,5 +26,6 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Free, local-only web app (validate + generate test data) on GitHub Pages.
 - Zero runtime dependencies; ESM + CJS + TypeScript types.
 
-[Unreleased]: https://github.com/didrod205/checkdigit/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/didrod205/checkdigit/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/didrod205/checkdigit/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/didrod205/checkdigit/releases/tag/v0.1.0

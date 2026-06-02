@@ -50,13 +50,32 @@ check or convert an identifier.
 
 **No install —** just open the **[web app](https://didrod205.github.io/checkdigit/)**.
 
-For the library:
+**Command line:**
+
+```bash
+npx @didrod2539/checkdigit validate 4111111111111111   # ✓ valid  credit-card (Visa)
+echo "DE89 3704 0044 0532 0130 00" | npx @didrod2539/checkdigit validate
+npx @didrod2539/checkdigit generate card --brand Amex  # a format-valid TEST card
+```
+
+**Library:**
 
 ```bash
 npm install @didrod2539/checkdigit
 ```
 
-Zero dependencies. ESM + CJS + TypeScript types. Runs in the browser, Node, Deno and Bun.
+Zero runtime dependencies. ESM + CJS + TypeScript types. Runs in the browser, Node, Deno and Bun.
+
+## CLI
+
+```bash
+checkdigit validate <id>     # auto-detect (card/IBAN/ISBN/barcode) + validate
+checkdigit generate <kind>   # make format-valid TEST data
+```
+
+`validate` exits non-zero on an invalid check digit — handy in scripts. Generate
+kinds: `card` (`--brand`), `isbn`, `barcode` (`--type`), `luhn` (`--length`).
+Generated values are **test data** (correct checksum) — not real accounts.
 
 ## Usage
 
